@@ -16,7 +16,7 @@ resource "aws_instance" "k8s" {
 }
 
 resource "aws_security_group" "allow_all_k8s" {
-    name        = "allow_all_docker"
+    name        = "allow_all_k8s"
     description = "allow all traffic"
 
     ingress {
@@ -39,6 +39,6 @@ resource "aws_security_group" "allow_all_k8s" {
     }
 
     tags = {
-        Name = "allow-all-docker"
+        Name = "allow-all-k8s"
     }
 }
