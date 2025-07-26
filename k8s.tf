@@ -15,7 +15,7 @@ resource "aws_instance" "k8s" {
   }
 }
 
-resource "aws_security_group" "allow_all_docker" {
+resource "aws_security_group" "allow_all_k8s" {
     name        = "allow_all_docker"
     description = "allow all traffic"
 
