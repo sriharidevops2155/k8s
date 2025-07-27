@@ -14,13 +14,10 @@ lvextend -L +10G /dev/RootVG/varVol
 xfs_growfs /
 xfs_growfs /var
 
-RCH=amd64
+ARCH=amd64
 PLATFORM=$(uname -s)_$ARCH
-sleep 2m
 curl -sLO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$PLATFORM.tar.gz"
-sleep 1m
 curl -sL "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_checksums.txt" | grep $PLATFORM | sha256sum --check
-sleep 1m
 tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp && rm eksctl_$PLATFORM.tar.gz
 install -m 0755 /tmp/eksctl /usr/local/bin && rm /tmp/eksctl
 
