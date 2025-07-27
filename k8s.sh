@@ -28,9 +28,4 @@ mv kubectl /usr/local/bin/kubectl
 eksctl version
 kubectl version
 
-# git clone https://github.com/sriharidevops2155/k8s.git
-# cd k8s
-# eksctl create cluster --config-file=eks.yml
-
-
-# Need to exit once and relogin again to sync the changes
+# git clone https://github.com/sriharidevops2155/k8s.git && cd k8s && eksctl create cluster --config-file=eks.yml
