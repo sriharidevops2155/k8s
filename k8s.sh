@@ -32,7 +32,7 @@ git clone https://github.com/sriharidevops2155/k8s.git /home/ec2-user/k8s
 
 git clone https://github.com/ahmetb/kubectx /opt/kubectx
 ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx
-ln -s /opt/kubectx/kubens /usr/local/bin/kuben
+ln -s /opt/kubectx/kubens /usr/local/bin/kubens
 
 curl -sS https://webinstall.dev/k9s | bash
 
